@@ -1,5 +1,6 @@
 
 import { useState, useEffect } from "react";
+import './scss/common.scss'
 
 function Hello() {
 

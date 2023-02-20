@@ -1,5 +1,5 @@
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
 	Routes,
 	Route,
 } from "react-router-dom";
@@ -9,7 +9,7 @@ import Detail from "./routes/Detail";
 
 function MovieList() {
 	return (
-		<Router basename={process.env.PUBLIC_URL}>
+		<Router>
 			<Routes>
 				<Route path={`${process.env.PUBLIC_URL}/movie/:id`} element={<Detail />} />
 				<Route path="/" element={<Home />} />
